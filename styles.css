@@ -64,6 +64,16 @@ img { display: block; width: 100%; height: 100%; }
 
 .experience { padding-top: 156px; }
 .section-title { margin: 0 0 75px; font-size: 64px; line-height: 1.15; letter-spacing: -.035em; font-weight: 600; }
+.soft-blur-title .soft-blur-word { display: inline-block; white-space: nowrap; }
+.soft-blur-title .soft-blur-unit {
+  display: inline-block;
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  filter: blur(12px);
+  transform-origin: 50% 55%;
+  backface-visibility: hidden;
+  will-change: transform, opacity, filter;
+}
 .jobs { border-bottom: 1px solid var(--line); }
 .job { min-height: 177px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); transition: opacity .2s ease; }
 a.job:hover { opacity: .65; }
@@ -157,4 +167,4 @@ a.job:hover { opacity: .65; }
   .footer p { margin-top: 180px; font-size: 18px; }
 }
 
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } .magnet-btn { transform: none !important; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } .magnet-btn { transform: none !important; } .soft-blur-title .soft-blur-unit { opacity: 1; transform: none; filter: none; } }
