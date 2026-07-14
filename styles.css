@@ -90,6 +90,7 @@ a.job:hover { opacity: .65; }
 .footer { padding: 176px 0 68px; }
 .footer h2 { max-width: 1000px; margin: 0; font-size: 64px; line-height: 1.16; letter-spacing: -.03em; font-weight: 600; }
 .footer h2 a { color: var(--blue); }
+.footer h2 .email-link { color: inherit; }
 .footer p { margin: 366px 0 0; color: rgba(255,255,255,.5); font-size: 28px; }
 
 @media (min-width: 1300px) {
