@@ -38,11 +38,12 @@ img { display: block; width: 100%; height: 100%; }
 .content { min-width: 0; }
 .hero { padding-top: 31px; }
 .status { display: inline-flex; align-items: center; gap: 12px; padding: 16px 24px; border-radius: 44px; background: #191919; font-size: 16px; font-weight: 500; }
-.status-dot { position: relative; width: 10px; height: 10px; flex: 0 0 auto; border-radius: 50%; background: #fa5f05; box-shadow: 0 0 0 5px rgba(250,95,5,.13); }
-.status-dot::after { content: ""; position: absolute; inset: -1px; border-radius: inherit; background: rgba(250,95,5,.55); animation: status-pulse 1.8s ease-out infinite; }
+.status-dot { position: relative; width: 18px; height: 18px; flex: 0 0 auto; border-radius: 50%; background: rgba(250,95,5,.12); }
+.status-dot::before { content: ""; position: absolute; inset: 2px; border-radius: inherit; background: rgba(250,95,5,.48); opacity: .55; transform: scale(.82); animation: status-pulse 1.8s ease-in-out infinite; }
+.status-dot-core { position: absolute; z-index: 1; left: 50%; top: 50%; width: 8px; height: 8px; border-radius: 50%; background: #fa5f05; box-shadow: 0 0 6px rgba(250,95,5,.45); transform: translate(-50%, -50%); }
 @keyframes status-pulse {
-  0% { opacity: .8; transform: scale(1); }
-  70%, 100% { opacity: 0; transform: scale(2.7); }
+  0%, 100% { opacity: .32; transform: scale(.64); }
+  50% { opacity: .88; transform: scale(1); }
 }
 .hero h1 { margin: 78px 0 42px; max-width: 1264px; font-size: clamp(54px, 3.75vw, 72px); line-height: 1.2; letter-spacing: -.035em; font-weight: 600; }
 .hero h1 span { color: rgba(255,255,255,.4); }
