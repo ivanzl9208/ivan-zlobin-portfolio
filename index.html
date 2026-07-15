@@ -10,113 +10,116 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header class="header page-shell">
+  <body id="top">
+    <header class="site-header">
       <a class="identity" href="#top" aria-label="Наверх">
         <span class="avatar"><img src="public/assets/avatar.jpg" alt="Иван Злобин" /></span>
-        <span>Иван<br />Злобин</span>
+        <span class="identity-copy">
+          <span class="identity-name">Иван Злобин</span>
+          <span class="identity-status"><i class="status-dot" aria-hidden="true"></i>Сейчас в СберМобайле</span>
+        </span>
       </a>
+
       <nav class="nav" aria-label="Основная навигация">
-        <a href="#cases">Кейсы</a>
+        <a href="#projects">Проекты</a>
         <a href="#experience">Опыт</a>
         <a href="#about">Обо мне</a>
       </nav>
+
       <button class="menu-button" type="button" aria-expanded="false" aria-label="Открыть меню">
         <span></span><span></span>
       </button>
     </header>
 
-    <main id="top" class="page-shell layout">
-      <aside class="sidebar" aria-label="Контакты">
-        <div class="identity sidebar-identity">
-          <span class="avatar"><img src="public/assets/avatar.jpg" alt="" /></span>
-          <span>Иван<br />Злобин</span>
+    <main>
+      <section class="hero content-shell" aria-labelledby="hero-title">
+        <h1 id="hero-title"><span>Продуктовый дизайнер из Москвы. </span>Уже 6 лет проектирую и развиваю сервисы в Сбере и СберМобайле</h1>
+        <div class="actions">
+          <a class="button button-primary magnet-btn" href="https://t.me/baho9208" target="_blank" rel="noreferrer">Написать в Telegram</a>
+          <a class="button" href="mailto:ivanzl9208@gmail.com"><span class="desktop-label">Связаться по E-mail</span><span class="mobile-label">E-mail</span></a>
+          <a class="button" href="#experience"><span class="desktop-label">Посмотреть CV</span><span class="mobile-label">CV</span></a>
         </div>
-        <div class="sidebar-links">
-          <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram ↗</a>
-          <a href="mailto:hello@example.com">Email ↗</a>
-          <a href="#experience">CV ↗</a>
+      </section>
+
+      <section id="projects" class="cases content-shell" aria-label="Избранные проекты">
+        <article class="case case-esim">
+          <div class="case-media" aria-hidden="true"></div>
+          <h2>Переосмыслил страницу eSIM</h2>
+          <p>Это дало +20% конверсии со страницы. Отвечал за общую идею страницы, анимации и вижен</p>
+        </article>
+
+        <article class="case case-menu">
+          <div class="case-media" aria-hidden="true"></div>
+          <h2>Редизайн главного меню</h2>
+          <p>Увеличил глубину просмотров сайта на 16%, и нахождение нужных разделов</p>
+        </article>
+
+        <article class="case case-ai">
+          <div class="case-media" aria-hidden="true"></div>
+          <h2>Внедрил ИИ-ассистента</h2>
+          <p>Первыми среди РФ телекома внедрили цифрового ассистента на страницу поддержки</p>
+        </article>
+
+        <article class="case case-b2b">
+          <div class="case-media" aria-hidden="true"></div>
+          <h2>Лендинг для B2B направления СберМобайл</h2>
+          <p>С ноля создал новый дизайн сайта для бизнес направления СберМобайл</p>
+        </article>
+
+        <article class="case case-full">
+          <div class="case-media" aria-hidden="true"></div>
+          <h2>До того как пришёл в СберМобайл</h2>
+          <p>Отвечал за дебетовые, кредитные карты и их клиентские пути на сайте sberbank.ru. Удалось так же поработать в Студии Олега Чулакова и выиграть пару крупных тендеров</p>
+        </article>
+      </section>
+
+      <section id="experience" class="experience content-shell" aria-labelledby="experience-title">
+        <h2 class="section-title" id="experience-title" data-soft-blur="characters">Где успел поработать</h2>
+        <div class="jobs">
+          <a class="job" href="https://sbermobile.ru" target="_blank" rel="noreferrer">
+            <span class="job-company"><i class="job-mark orange"></i><span><b>СберМобайл</b><small>sbermobile.ru</small></span></span>
+            <span class="job-role">Продуктовый дизайнер</span>
+            <span class="job-years">2025 — ✦</span>
+          </a>
+
+          <a class="job" href="https://sberbank.ru" target="_blank" rel="noreferrer">
+            <span class="job-company"><i class="job-mark green"></i><span><b>Сбер</b><small>sberbank.ru</small></span></span>
+            <span class="job-role">Продуктовый дизайнер</span>
+            <span class="job-years">2020 — 2025</span>
+          </a>
+
+          <a class="job" href="https://chulakov.ru" target="_blank" rel="noreferrer">
+            <span class="job-company"><i class="job-mark yellow"></i><span><b>Студия Олега Чулакова</b><small>chulakov.ru</small></span></span>
+            <span class="job-role">UX/UI дизайнер</span>
+            <span class="job-years">2019 — 2020</span>
+          </a>
+
+          <div class="job">
+            <span class="job-company"><i class="job-mark gray"></i><span><b>Агентства и фриланс</b><small>synaptik.ru · creativa.su · fl.ru</small></span></span>
+            <span class="job-role">Веб &amp; Графический дизайнер</span>
+            <span class="job-years">2012 — 2019</span>
+          </div>
         </div>
-      </aside>
+      </section>
 
-      <div class="content">
-        <section class="hero" aria-labelledby="hero-title">
-          <div class="status"><span class="status-dot" aria-hidden="true"></span>Сейчас в СберМобайле</div>
-          <h1 id="hero-title"><span>Продуктовый дизайнер из Москвы. </span>Уже 6 лет проектирую и развиваю веб-сервисы Сбера и СберМобайла</h1>
-          <div class="actions">
-            <a class="button button-primary magnet-btn" href="https://t.me/" target="_blank" rel="noreferrer">Написать в Telegram</a>
-            <a class="button" href="mailto:hello@example.com">Связаться по Email</a>
-            <a class="button" href="#experience">Посмотреть CV</a>
-          </div>
-        </section>
+      <section id="about" class="about content-shell" aria-labelledby="about-title">
+        <h2 class="section-title" id="about-title" data-soft-blur="characters">Жизнь вне дизайна</h2>
+        <p class="about-copy">Когда не проектирую интерфейсы,<br class="mobile-copy-break" /> провожу время с дочкой. Она родилась<br class="mobile-copy-break" /> в Аргентине <span class="emoji">🇦🇷</span>, где мы прожили<br class="mobile-copy-break" /> первые полгода её жизни. В свободное<br class="mobile-copy-break" /> время стараюсь не&nbsp;пропускать<br class="mobile-copy-break" /> тренировки по муай-тай <span class="emoji">🥊</span>, а<br class="mobile-copy-break" /> вечерами люблю позалипать<br class="mobile-copy-break" /> в&nbsp;PlayStation <span class="emoji">👾</span></p>
 
-        <section id="cases" class="cases" aria-label="Избранные кейсы">
-          <article class="case case-wide">
-            <div class="case-media" aria-hidden="true"></div>
-            <h2>Переосмыслил продуктовую страницу eSIM</h2>
-            <p>Что дало +20% конверсии со страницы. Отвечал за общую идею страницы, анимации и вижен</p>
-          </article>
-          <article class="case case-narrow">
-            <div class="case-media" aria-hidden="true"></div>
-            <h2>Редизайн меню</h2>
-            <p>Увеличил глубину просмотров сайта на 16%, и нахождение нужных разделов</p>
-          </article>
-          <article class="case">
-            <div class="case-media" aria-hidden="true"></div>
-            <h2>Внедрил ИИ-ассистента</h2>
-            <p>Мы первыми среди РФ телекома внедрили на сайт цифрового ассистента на страницу поддержки, что значительно сняло нагрузку с центра поддержки</p>
-          </article>
-          <article class="case">
-            <div class="case-media" aria-hidden="true"></div>
-            <h2>Переосмыслил и нарисовал лендинг для B2B направления СберМобайл</h2>
-            <p>У меня было 3 ночи и пара чашек кофе...</p>
-          </article>
-          <article class="case case-full">
-            <div class="case-media" aria-hidden="true"></div>
-            <h2>До того как пришёл в СберМобайл</h2>
-            <p>Отвечал за дебетовые, кредитные карты и их клиентские пути на сайте sberbank.ru. Удалось также поработать в Студии Олега Чулакова и выиграть пару крупных тендеров</p>
-          </article>
-        </section>
+        <div class="gallery">
+          <figure class="gallery-family"><img src="public/assets/life-1.jpg" alt="Иван с семьёй" /></figure>
+          <figure class="gallery-gaming"><img src="public/assets/life-3.jpg" alt="Игровое место с PlayStation" /></figure>
+          <figure class="gallery-boxing"><img src="public/assets/life-2.jpg" alt="Тренировка по муай-тай" /></figure>
+          <figure class="gallery-map"><img src="public/assets/life-4.jpg" alt="Карта Аргентины на стене" /></figure>
+        </div>
+      </section>
 
-        <section id="experience" class="experience" aria-labelledby="experience-title">
-          <h2 class="section-title" id="experience-title" data-soft-blur="characters">Где успел поработать</h2>
-          <div class="jobs">
-            <a class="job" href="https://sbermobile.ru" target="_blank" rel="noreferrer">
-              <span class="job-main"><i class="job-mark orange"></i><span><b>СберМобайл</b><small>sbermobile.ru</small></span></span>
-              <span class="job-meta"><b>2025 — ✦</b><small>Продуктовый дизайнер</small></span>
-            </a>
-            <a class="job" href="https://sberbank.ru" target="_blank" rel="noreferrer">
-              <span class="job-main"><i class="job-mark green"></i><span><b>Сбер</b><small>sberbank.ru</small></span></span>
-              <span class="job-meta"><b>2020 — 2025</b><small>Продуктовый дизайнер</small></span>
-            </a>
-            <a class="job" href="https://chulakov.ru" target="_blank" rel="noreferrer">
-              <span class="job-main"><i class="job-mark yellow"></i><span><b>Студия Олега Чулакова</b><small>chulakov.ru</small></span></span>
-              <span class="job-meta"><b>2019 — 2020</b><small>UX/UI дизайнер</small></span>
-            </a>
-            <div class="job">
-              <span class="job-main"><i class="job-mark gray"></i><span><b>Небольшие студии и фриланс</b><small>synaptik.ru · creativa.su · fl.ru</small></span></span>
-              <span class="job-meta"><b>2012 — 2019</b><small>Веб-дизайнер, Графический дизайнер</small></span>
-            </div>
-          </div>
-        </section>
-
-        <section id="about" class="about" aria-labelledby="about-title">
-          <h2 class="section-title" id="about-title" data-soft-blur="characters">Жизнь вне дизайна</h2>
-          <p class="about-copy">Когда не проектирую интерфейсы, провожу время с дочкой, которая родилась в Аргентине 🇦🇷, стараюсь не пропускать тренировки по муай-тай 🥊, а по вечерам могу надолго залипнуть в PlayStation 🎮</p>
-          <div class="gallery">
-            <figure class="gallery-tall"><img src="public/assets/life-1.jpg" alt="Иван с семьёй" /></figure>
-            <figure><img src="public/assets/life-3.jpg" alt="Игровое место с PlayStation" /></figure>
-            <figure><img src="public/assets/life-4.jpg" alt="Карта Аргентины на стене" /></figure>
-            <figure class="gallery-wide"><img src="public/assets/life-2.jpg" alt="Тренировка по муай-тай" /></figure>
-          </div>
-        </section>
-
-        <footer class="footer">
-          <h2 data-soft-blur="words">Открыт для сотрудничества.<br />Свяжитесь со мной через <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a> или Email</h2>
-          <p>© 2026</p>
-        </footer>
-      </div>
+      <footer class="footer content-shell">
+        <h2 data-soft-blur="words">Открыт для сотрудничества.<br />Свяжитесь со мной через <a href="https://t.me/baho9208" target="_blank" rel="noreferrer">Telegram</a> или <a href="mailto:ivanzl9208@gmail.com">E-mail</a></h2>
+        <p>© 2026. Сделано с помощью Figma, Codex и бесчисленных «ещё один пиксель и спать» 😄</p>
+      </footer>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>
